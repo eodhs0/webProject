@@ -1,0 +1,106 @@
+.firstDiv{
+    margin-top:75px;
+    padding: 15px;
+    background-color: #F0FFF0;
+}
+
+.secondDiv{
+    background-color: #FAFAD2;
+    margin: 15px 0;
+    padding: 15px 15px;
+}
+
+.thirdDiv{
+    background-color: #FFF0F0;
+    padding: 30px 30px;
+}
+
+
+
+.divTitle{
+    margin: 15px 0 0 15px;
+}
+
+.divContent{
+    display: inline-block;
+    width:200px;
+    height:250px;
+    margin: 1px 15px 15px 15px;
+}
+
+.divContentImage{
+    width:200px;
+    height:200px;
+    
+    border-style: outset;
+}
+
+.secondDivContent{
+    max-width: 100%;
+    width: 1000px;
+    height: 400px;
+    border: 3px dashed black;
+    margin: 0 0 15px 15px;
+    overflow: scroll;
+}
+
+.lideco{
+    font-size: 1em;
+    margin: 0 0 50px 0;
+}
+
+div h1{   
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 5px 15px 5px 0;
+}
+
+div div h2{
+    margin: 1px 10px 20px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+li h4{
+    font-size: 16px;
+}
+li h5{
+    font-size: 13px;
+}
+
+div div h3{
+    font-size: 20px;
+    padding:5px 15px 0 20px;
+}
+
+.redColor{
+    color: #FF5050;
+}
+
+.blueColor{
+    color: #4646CD;
+}
+
+.embedPDF{
+    max-width: 80%;
+    width: 1000px;
+    height: 800px;
+    margin: 0 0 15px 15px;
+}
+
+h4 abbr{
+    text-decoration: none;
+    color: mediumpurple;
+}
+
+
+div div p{
+    font-size: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: none;
+}
+
+h2 ~ p {
+    display: none;
+}

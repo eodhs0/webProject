@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="life.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <title>Londa's Life Story</title>
+  <meta charset="UTF-8"> <!-- 문자 인코딩 방식 브라우저에 전달 -->
+  <meta name="description" content="Londa's life story page.'">
+  <meta name="keywords" content="Photo, Video">
+  <meta name="author" content="Daehyun Park">
+</head>
+<body>
+    <nav class="mainHover">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="londaLife.html">Londa's Life</a></li>
+        <li><a href="shopping.html">Item Review</a></li>
+        <li><a href="Information.html">Information</a></li>
+        <li class="right-align"><a href="login.html">SignIn / SignUp</a></li> <!-- right-align을 이용해 about 오른쪽으로 때버림 -->
+      </ul>
+    </nav>
+    
+    <div class="divLifeMain">
+        <div class="divLifeMaindDate">
+            <form> 
+                <button id="slide_button" type="button">Image Slide</button> <br>
+            </form>
+            <a class="goToVideo" href="#goToVideoPart"><h2 class="goToVideo">Go to video!</h2></a>
+        </div>
+        <br>
+        <img class="talkImage" src="talk2.jpg" alt="talk">
+        <img class="dogImage" src="lifeMainLonda.jpg" alt="londa">
+    </div>
+  
+    <div class="divLifeContent">
+        <div id="img1" class="floating-box">
+            <img class="imagePositionZindex"  src="20160528(1).jpg" width="320px" height="420px">
+            <pre> 2016/05/28 입양한 날, 누나 따라가기 싫은 론다</pre>
+            <time datetime="2016-05-28"></time>  
+        </div>
+        
+        <div id="img2" class="floating-box">
+            <img class="imagePositionZindex" src="20160528(2).jpg" width="320px" height="420px">
+            <pre> 2016/05/28 집오느라 피곤했는지 바로 자는 론다</pre>
+            <time datetime="2016-05-28"></time>
+        </div>
+
+        <div id="img3" class="floating-box">
+            <img class="imagePositionZindex" src="20160529.jpg" width="320px" height="420px">
+            <pre> 2016/05/29 귀여운 론다</pre>
+            <time datetime="2016-05-29"></time>
+        </div>
+
+        <div id="img4" class="floating-box">
+            <img class="imagePositionZindex" src="kiss.jpg" width="320px" height="420px">
+            <pre> 2016/05/29 내가 싫은 론다</pre>
+            <time datetime="2016-05-29"></time>
+        </div>
+
+        <div id="img5" class="floating-box">
+            <img class="imagePositionZindex" src="20160616.jpg" width="320px" height="420px">
+            <pre> 2016/06/16 벌받는 론다</pre>
+            <time datetime="2016-06-16"></time>
+        </div>
+
+        <div id="img6" class="floating-box">
+            <img class="imagePositionZindex" src="20160630.jpg" width="320px" height="420px">
+            <pre> 2016/06/30 집온지 한 달만에 적응해버린 론다</pre>
+            <time datetime="2016-06-30"></time>
+        </div>
+        
+        <div id="img7" class="floating-box">
+            <img class="imagePositionZindex" src="20160710.jpg" width="320px" height="420px">
+            <pre> 2016/07/10 그새 털이 많이 긴 론다</pre>
+            <time datetime="2016-07-10"></time>
+        </div>
+        <div id="img8" class="floating-box">
+            <img class="imagePositionZindex" src="20160825.jpg" width="320px" height="420px">
+            <pre> 2016/08/25 비숑 싫어서 도망가는 론다</pre>
+            <time datetime="2016-08-25"></time>
+        </div>
+        <div id="img9" class="floating-box">
+            <img class="imagePositionZindex" src="20161026.jpg" width="320px" height="420px">
+            <pre> 2016/10/26 1살 먹은 론다</pre>
+            <time datetime="2016-10-26"></time>
+        </div>
+        <div id="img10" class="floating-box">
+            <img class="imagePositionZindex" src="20170122.jpg" width="320px" height="420px">
+            <pre> 2017/01/22 눈이 좋은 론다</pre>
+            <time datetime="2017-01-22"></time>
+        </div>
+        <div id="img11" class="floating-box">
+            <img class="imagePositionZindex" src="20170428.jpg" width="320px" height="420px">
+            <pre> 2017/04/28 미용받은 론다</pre>
+            <time datetime="2017-04-28"></time>
+        </div>
+        <div id="img12" class="floating-box">
+            <img class="imagePositionZindex" src="20170429.jpg" width="320px" height="420px">
+            <pre> 2017/04/29 아직도 내가 싫은 론다</pre>
+            <time datetime="2017-04-29"></time>
+        </div>
+        <div class="floating-box-vertical" id="goToVideoPart">
+            <time datetime="2017-01-22"></time>
+            <video  width="320px" height="420px" controls loop>
+                <source src="snowingDay.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="floating-box-wide">
+            <video  width="550px" height="420px" controls  loop>
+                <time datetime="2016-11-20"></time>
+                <source src="londaToy.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <script type="text/javascript" src="js_life.js"></script>
+</body>
+</html>

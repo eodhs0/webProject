@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="information.css">
+    <title>Dog Information</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <meta charset="UTF-8"> <!-- 문자 인코딩 방식 브라우저에 전달 -->
+    <meta name="description" content="Giving various information about dog">
+    <meta name="keywords" content="dog information, dog">
+    <meta name="author" content="Daehyun Park">
+</head>
+<body>
+    <nav class="mainHover"> 
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="londaLife.html">Londa's Life</a></li>
+        <li><a href="shopping.html">Item Review</a></li>
+        <li><a href="Information.html">Information</a></li>
+        <li class="right-align"><a href="login.html">SignIn / SignUp</a></li> <!-- right-align을 이용해 about 오른쪽으로 때버림 -->
+      </ul>
+    </nav>
+
+    <div class="firstDiv">
+        <div class="divTitle">
+            <h1>강아지가 먹으면 안되는 음식들</h1>
+        </div>
+        <div class="divContent">
+            <img id="food1" class="divContentImage" src="nofood1.jpg">
+            <h2 class="pTitle">초콜릿</h2>
+            <p id="food_p1">테오브러민이라는 성분이 초콜렛에서 이뇨작용과 혈관 확장작용을 하는 독성물질 이라고 합니다.</p>
+        </div>
+        <div class="divContent">
+            <img id="food2" class="divContentImage" src="nofood2.jpg">
+            <h2 class="pTitle">아이스크림</h2>
+            <p id="food_p2">우유나 유제품은 강아지한테 설사나 소화계 복통 그리고 가려움 증상같은 알러지 증상도 생길수 있게 한답니다. </p>
+        </div>
+        <div class="divContent">
+            <img id="food3" class="divContentImage" src="nofood3.jpg">
+            <h2 class="pTitle">양파</h2>
+            <p id="food_p3">양파나 마늘은 어떤 종류던지 강아지의 적혈구를 파괴해서 빈혈을 생기게 한다고 하네요.</p>
+        </div>
+        <div class="divContent">
+            <img id="food4" class="divContentImage" src="nofood4.jpg">
+            <h2 class="pTitle">포도/건포도</h2>
+            <p id="food_p4">포도하고 건포도는 신부전 원인이기도 한다네요. 적은량도 우리 강아지를 아프게 할수 있답니다.</p>
+        </div>
+        <div class="divContent">
+            <img id="food5" class="divContentImage" src="nofood5.jpg">
+            <h2 class="pTitle">주류</h2>
+            <p id="food_p5">주류를 강아지들이 마시거나 먹으면 사람과 똑같이 간과 뇌에 영향을 준다고 하네요.</p>
+        </div>
+        <div class="divContent">
+            <img id="food6" class="divContentImage" src="nofood6.jpg">
+            <h2 class="pTitle">날계란</h2>
+            <p id="food_p6">살모넬라와 대장균 중독의 위험이 있어요.</p>
+        </div>
+        <div class="divContent">
+            <img id="food7" class="divContentImage" src="nofood7.jpg">
+            <h2 class="pTitle">생고기/날생선</h2>
+            <p id="food_p7">생고기, 날생선은 날계란같이 식중독을 생기게 하는 박테리아를 가지고 있어요.</p>
+        </div>
+        <div class="divContent">
+            <img id="food8" class="divContentImage" src="nofood8.jpg">
+            <h2 class="pTitle">아보카도</h2>
+            <p id="food_p8">강아지가 아보카도를 먹으면 큰일난다고 합니다. 살균 독소 포함물인 펄신이라불리는 물질을 포함하고 있다고 하네요.</p>
+        </div>
+        <div class="divContent">
+            <img id="food9" class="divContentImage" src="nofood9.jpg">
+            <h2 class="pTitle">소금</h2>
+            <p id="food_p9">소금기가 많은 음식을 먹으면 강아지는 심한 갈증, 과다 배뇨를 일으켜요. 그리고 나트륨이온에 중독될 수 있어요.</p>
+        </div>
+        <div class="divContent">
+            <img id="food10" class="divContentImage" src="nofood10.jpg">
+            <h2 class="pTitle">사람이 먹는 약</h2>
+            <p id="food_p10">아세트아미노센이나 이브프로펜같은 일반적 진통제나 감기약이라도 강아지한텐 치명적이에요.</p>
+        </div>
+    </div>
+
+    <div class="secondDiv">
+        <div class="divTitle">
+            <h1>강아지 건강 관리</h1>
+        </div>
+        <div class="secondDivContent">
+            <h3><span class="redColor">비만도</span> 체크</h3>
+            <ol type="A">
+                <li class="lideco">
+                    <h4>너무 말랐다</h4>
+                    <h5>늑골, 척추, 골반,뼈 등 모든 뼈의 돌기부가 멀리서 보아도 두드러져 보인다.체지방도 거의 없고 근육양도 적다. <span class="redColor">칼로리 소모를 줄이고 밥을 많이 먹여야 한다</span>.</h5>
+                </li>
+                <li class="lideco">
+                    <h4>말랐다</h4>
+                    <h5>늑골이 손쉽게 만져진다. 요추의 앞쪽 끝부분, 골반 뼈도 튀어나와 보인다.허리는 매우 잘록하며 골반이 두드러져 보이는 것을 알 수 있다.</h5>
+                </li>
+                <li class="lideco">
+                    <h4>이상적</h4>
+                    <h5>늑골을 만지면 확인할 수 있는 정도 피하지방이 적당하게 붙어 있다. 위에서 보면 허리가 들어간 것을 쉽게 알 수 있다. <span class="blueColor">건강하다.</span></h5>
+                </li>
+                <li class="lideco">
+                    <h4>무겁다</h4>
+                    <h5>피하지방이 두껍고 늑골을 만지기 어렵다. 허리와 엉덩이의 시작 부위에 많은 지방이 쌓여있다. 허리의 잘록함이 보이지 않는다.</h5>
+                </li>
+                <li class="lideco">
+                    <h4>비만</h4>
+                    <h5>가슴, 등, 꼬리 시작 부위에 지방이 매우 많다. 목이나 네 다리에도 지방이 있고, 복부가 뚜렷하게 불룩하다. <span class="redColor">운동을 반드시 시켜야 한다.</span></h5>
+                </li>
+            </ol>
+        </div>
+        <embed class="embedPDF" type="application/pdf" src="healthCare.pdf">
+
+        <h4>Here is quote from <abbr title="http://www.9dog.co.kr">9Dog</abbr>.</h4>
+    </div>
+
+    <div class="thirdDiv">
+        <form> 
+                <button id="Q1" type="button">1번문제</button>
+                <button id="Q2" type="button">2번문제</button>
+                <button id="Q3" type="button">3번문제</button>
+                <button id="Q4" type="button">4번문제</button>
+                <button id="Q5" type="button">5번문제</button>
+                <button id="Q6" type="button">6번문제</button>
+                <button id="send" type="button">답 제출</button>
+        </form>
+        <div id="info" style="display:block">
+            <h1>론다 & 강아지 상식 퀴즈</h1>
+            <p>위의 문제번호를 클릭하여 문제를 풀어주세요.</p>
+        </div>
+        <div id="Quiz1" style="display:none">
+            <h5>Q1. 론다의 생일은?</h5>
+            1. 10월 26일 <input id="a1" type="radio" name="S1"> <br>
+            2. 12월 21일 <input type="radio" name="S1"> <br>
+            3. 9월 30일 <input type="radio" name="S1"> <br>
+            4. 8월 15일 <input type="radio" name="S1"> <br>
+        </div>
+        <div id="Quiz2" style="display:none">
+            <h5>Q2. 론다의 성별은?</h5>
+            1. 남성 <input type="radio" name="S2"> <br>
+            2. 여성 <input id="a2" type="radio" name="S2"> <br>
+            3. 중성 <input type="radio" name="S2"> <br>
+            
+        </div>
+        <div id="Quiz3" style="display:none">
+            <h5>Q3. 론다의 취미은?</h5>
+            1. 달리기 <input type="radio" name="S3"> <br>
+            2. 밥먹기 <input type="radio" name="S3"> <br>
+            3. 잠자기 <input type="radio" name="S3"> <br>
+            4. 점프하기 <input id="a3" type="radio" name="S3"> <br>
+        </div>
+        <div id="Quiz4" style="display:none">
+            <h5>Q4. PDH가 론다를 입양한 날은?</h5>
+            1. 2016/6/1 <input type="radio" name="S4"> <br>
+            2. 2015/12/25 <input type="radio" name="S4"> <br>
+            3. 2016/5/28 <input id="a4" type="radio" name="S4"> <br>
+            4. 2016/11/17 <input type="radio" name="S4"> <br>
+        </div>
+        <div id="Quiz5" style="display:none">
+            <h5>Q5. 강아지가 먹어도 <span>되는</span> 음식은?</h5>
+            1. 초콜릿 <input type="radio" name="S5"> <br>
+            2. 사과 <input id="a5" type="radio" name="S5"> <br>
+            3. 포도 <input type="radio" name="S5"> <br>
+            4. 아이스크림 <input type="radio" name="S5"> <br>
+        </div>
+        <div id="Quiz6" style="display:none" onkeydown="p">
+            <h5>Q6. 강아지가 유난히 머리를 흔들거나 긁으면 살펴볼 부위는?</h5>
+            1. 귀 <input id="a6" type="radio" name="S6"> <br>
+            2. 코 <input type="radio" name="S6"> <br>
+            3. 눈 <input type="radio" name="S6"> <br>
+            3. 입 <input type="radio" name="S6"> <br>
+        </div>
+        <div id="sendAnswer" style="display:none">
+            <h5>다 푸셨으면 아래의 '제출하기'버튼을 눌러 제출하세요.</h5>
+            <button id="sa" type="button">제출하기</button><br><br>
+        </div>
+        <button id="next" type="button">oneClick - next</button> <button id="prev" type="button">DoubleClick - prev</button>
+        <br>
+        <br>
+        <br>
+        <br>        
+    </div>
+    <script type="text/javascript" src="js_information.js"></script>
+</body>
+</html>

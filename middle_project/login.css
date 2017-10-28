@@ -1,0 +1,55 @@
+.background{
+    position: relative;
+    margin-top: 69px;
+    width: 100%;
+    height: 100%;
+}
+
+.imageDiv{
+    position: absolute;
+    width:35%;
+    height:100%;
+}
+
+.loginImage{
+    float:left;
+    max-width: 100%; /* 창 좁아지면 알아서 줄어들게 함 */
+    width: 650px;
+    /*opacity: 0.1;*/
+    height: auto;
+}
+
+.signInDiv{ /* sign In 쪽 Div 레이아웃 */
+    position:absolute;
+    margin-left:35%;
+    width: 32%;
+    height: 100%;
+    background-color: #78F3FF;
+}
+
+.signUpDiv{ /* sign up 쪽 Div 레이아웃 */
+    position:absolute;
+    margin-left:67%;
+    width: 33%;
+    height: 100%;
+    background-color: #78F3FF;
+}
+
+h6{
+   font-size:x-large; 
+   text-align: center;
+   color: brown;
+   opacity: 0.1;
+   /*margin-left: 20%;*/
+   font-family: Tahoma, Verdana, sans-serif;
+}
+
+div h1{ /*div 안에있는 모든 h1 자식들에 적용 */
+    font-size: medium;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div h3{/*div 안에있는 모든 h3 자식들에 적용 */
+    font-size: medium;
+}

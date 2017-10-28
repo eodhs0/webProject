@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <title>Sign In / Sign Up</title>
+    <meta charset="UTF-8"> <!-- 문자 인코딩 방식 브라우저에 전달 -->
+  <meta name="description" content="Login">
+  <meta name="keywords" content="login">
+  <meta name="author" content="Daehyun Park">
+</head>
+<body>
+    <nav class="mainHover"> 
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="londaLife.html">Londa's Life</a></li>
+        <li><a href="shopping.html">Item Review</a></li>
+        <li><a href="Information.html">Information</a></li>
+        <li class="right-align"><a href="login.html">SignIn / SignUp</a></li> <!-- right-align을 이용해 about 오른쪽으로 때버림 -->
+      </ul>
+    </nav>
+
+    <div class="background">
+        <div class="imageDiv">
+            <h6 id="text_welcome">Welcome to my homepage</h6>
+            <img class="loginImage" src="londaArt.jpg" alt="art" width:"400px" height:"100%">
+        </div>
+
+        <div class="signInDiv">
+            <h1>Sign In</h1>
+            <form>
+                <h3>id : </h3><input id="id1" type="text"></input><span hidden="hidden">Type your ID</span><br>
+                <h3>password : </h3><input type="password"></input><span hidden="hidden">Type your Password</span><br>
+                <button id="login_button" type="button">Login</button>
+            </form>
+        </div>
+
+        <div class="signUpDiv">
+            <h1>Sign up</h1>
+            <form>
+                <h3>id :</h3> <input id="id2" type="text" placeholder = "Length = 4 ~ 15"><br>
+                <h3>email : </h3><input id="email1" type = "email" name = "myemail" required placeholder = "example@example.com"><br>
+                <h3>password : </h3><input id="pw1" type="password" placeholder = "Length = 6 ~ 15"><br>
+                <h3>name : </h3><input id="name1" type = "text" name = "myname" placeholder = "Input your name" autocomplete><br>
+                <h3>phone : </h3><input id="phone1" type = "phone" name = "myphone" maxlength="11" placeholder = "ex)01012345678"> <br>
+                <h3>select your sex : </h3> male <input type="radio" name="color"> female <input type="radio" name="color"><br>
+                <h3>profile photo :</h3>파일 업로드: <input type="file" name="upload" value="file"><br><br>
+                <button id="signup_button" type="submit">Sign up</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js_login.js"></script>
+</body>
+</html>

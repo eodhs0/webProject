@@ -1,0 +1,86 @@
+
+
+table{
+    margin-top: 130px;
+    width:100%;
+    border: 3px solid #dcdcdc;
+    border-collapse: collapse;
+    opacity: 0.8;
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+    border: 3px solid #dcdcdc;
+    border-collapse: collapse;
+}
+
+td{ /* td안의 element들 style */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+th{
+    background-color: #28288C;
+    border: 3px solid #dcdcdc;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: #B4B4DC; /*짝수번째 행 색깔 바꾸기*/
+}
+
+
+/* 두번째 navigation bar 부분 */
+.selectUnorderdList{
+    left: 0; /* 왼쪽에 딱 붙이기 */
+    top: 69px; /* navigation bar바로 밑에위치 시키기 */
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /* 이거 왜하는겨 */
+    background-color: #28288C;
+    position: fixed; /* scroll 내려도 navigation bar 안내려가게 하기 */
+    width: 100%;
+    height: 30px;
+}
+.selectList{
+    display: inline;
+}
+.subBar li a {
+      display: inline-block; /* inline-block을 해줌으로써 아래의 padding이 먹히게 해줌!*/
+                           /* inline도 height를 갖게 해 주는 것이다!! */
+      color: white;
+      text-align: center;
+      padding: 5px 10%;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subBarHover li a:hover {
+      background-color: black;
+      background-repeat: no-repeat;
+}
+
+h1{
+    font-size: x-large;
+    text-align: center;
+    margin: 110px 0 0 0;
+}
+
+table a:link{
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    text-align: center;
+    background-color: #7878AA;
+}
+table a:visited{
+    color: #8C8CF5;
+    text-decoration: none;
+}
+table a:hover{
+    color: #FF6464;
+    text-decoration: none;
+}
+table a:active{
+    color: #50C8FF;
+    text-decoration: underline;
+}

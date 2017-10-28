@@ -1,0 +1,94 @@
+/* life.css */
+.divLifeMain {
+    position: fixed;
+    margin-top: 0px;
+    left: 15px;
+    width: 23%;
+    height: 500px;
+}
+.divLifeMaindDate{
+    position: fixed;
+}
+
+.divLifeContent {
+    margin-top: 80px;
+    margin-left: 23%;
+    height: 680px;
+    overflow: scroll; /* 컨텐츠 div의 크기 벗어날 때 스크롤로 다 볼 수 있게 */
+    /*z-index: -2;*/
+}
+
+.z-index1{
+    z-index: 1;
+}
+
+.z-index2{
+    z-index: -1;
+}
+
+.talkImage{
+    margin-left:20px;
+    margin-top: 97px; 
+    max-width:80%; /*화면 줄였을때 같이 줄어들게 함!*/
+    width:250px;
+    z-index: -2;
+}
+
+.dogImage{
+    max-width:100%;
+    width:300px;
+}
+
+.floating-box{ /* inline block box 만들기 */
+    position: relative; /* 자식인 img가 나를 따라오게 만듬! */
+    display: inline-block;  /* div를 가로로 나열되게 해줌 */
+    width: 320px;
+    height: 420px;
+    margin: 10px;
+    overflow: hidden; /* overflow되는거 잘라버림 */
+    border: 3px solid black;
+    z-index: 1; /* 스크롤 내렸을 때 네비게이션 바 위로 나타나지 않게 하기 */
+}
+
+.floating-box-vertical{
+    position: relative; /* 자식인 img가 나를 따라오게 만듬! */
+    display: inline-block;  /* div를 가로로 나열되게 해줌 */
+    width: 320px;
+    height: 420px;
+    margin: 10px;
+    overflow: hidden; /* overflow되는거 잘라버림 */
+    border: 3px solid black;
+}
+.floating-box-wide{
+    position: relative; /* 자식인 img가 나를 따라오게 만듬! */
+    display: inline-block;  /* div를 가로로 나열되게 해줌 */
+    width: 550px;
+    height: 420px;
+    margin: 10px;
+    overflow: hidden; /* overflow되는거 잘라버림 */
+    border: 3px solid black;
+}
+
+.imagePositionZindex{
+    z-index: -2; /* pre태그가 이미지보다 앞에 있게 하려고! */
+    position: absolute; /*floating box를 따라가게 된다*/   
+}
+
+img + pre{ /* 이미지와 같은 sibling인 가장 인접한 pre태그에만 적용! */
+    margin-top:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-small;
+    font-weight: bold;
+    color: white;
+    background-color:black;
+}
+
+.goToVideo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+}

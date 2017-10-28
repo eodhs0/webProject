@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="shopping.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    
+    <title>Dog Shopping</title>
+    <meta charset="UTF-8"> <!-- 문자 인코딩 방식 브라우저에 전달 -->
+    <meta name="description" content="Giving shopping information">
+    <meta name="keywords" content="Shopping, Toy, House, Cloth, Food">
+    <meta name="author" content="Daehyun Park">
+</head>
+<body>
+    <nav class="mainHover">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="londaLife.html">Londa's Life</a></li>
+        <li><a href="shopping.html">Item Review</a></li>
+        <li><a href="Information.html">Information</a></li>
+        <li class="right-align"><a href="login.html">SignIn / SignUp</a></li> <!-- right-align을 이용해 about 오른쪽으로 때버림 -->
+      </ul>
+    </nav>
+
+    <nav class="subBar subBarHover">
+      <ul class="selectUnorderdList subBarHover ">
+        <li id="clickFood" class="selectList subBarHover"><a href="#Food">Food</a></li>
+        <li id="clickToy" class="selectList subBarHover"><a href="#Toy">Toy</a></li>
+        <li id="clickCloth" class="selectList subBarHover"><a href="#Cloth">Cloth</a></li>
+        <li id="clickHouse" class="selectList subBarHover"><a href="#House">House</a></li>
+      </ul>
+    </nav>
+
+    <table id="foodTable" style="display:block">
+        <tr>
+            <th style="width: 15%; text-align: center;">Name</th>
+            <th style="width: 25%; text-align: center;">Image</th>
+            <th style="width: 40%; text-align: center;">MyReview</th>
+            <th style="width: 10%; text-align: center;">Link</th>
+        </tr>
+        </tr>
+        <tr>
+            <td id="abc">Natural O</td>
+            <td> <img id="natural" src="NaturalO.jpg" width="100%" alt="naturalO"></td>  <!--margin-left: auto; margin-right: auto; display: block; -->
+            <td class="tdText"><time datetime="2017-04-25T15:30:00">2017년 4월 25일 15시 30분</time><br>론다가 입양 초기에는 밥을 가리지않고 다 잘 먹었는데, 시간이 지나다 보니까 밥을 가려서 먹더라구요. 그래서 NaturalO를 선택했는데 이 사료는 각종 몸에 좋은 영양소들이 많이 들어있는데, 특히 연어를 갈아서 넣어서 강아지들이 좋아해요.</td>
+            <td ><a href="http://bit.ly/2pvKONG" target="_blank">click!</a></td>
+        </tr>
+        <tr>
+            <td >Holistic Plus</td>
+            <td> <img src="holisticPlus.jpg" width="100%" alt="holisticplus"></td>  <!--margin-left: auto; margin-right: auto; display: block; -->
+            <td class="tdText"><time datetime="2017-04-25T16:30:00">2017년 4월 25일 16시 30분</time><br>론다가 두 번째로 좋아하는 사료입니다. NaturalO보다 가격이 싼 편이고 오리 신선육, 생선 살코기가 들어가 강아지들이 좋아해요.</td>
+            <td ><a href="http://bit.ly/2pFNoAs" target="_blank">click!</a></td>
+        </tr>
+    </table>
+    
+    <table id="toyTable" style="display: none">
+        <tr>
+            <th style="width: 15%; text-align: center;">Name</th>
+            <th style="width: 25%; text-align: center;">Image</th>
+            <th style="width: 40%; text-align: center;">MyReview</th>
+            <th style="width: 10%; text-align: center;">Link</th>
+        </tr>
+        <tr>
+            <td>Baseball</td>
+            <td><img src="ball2.jpg" width="100%" alt="baseball"></td>
+            <td class="tdText"><time datetime="2017-04-26T17:30:00">2017년 4월 26일 17시 30분</time><br>누를때마다 소리가 나서 강아지가 지속적으로 호기심을 갖게되요! 던져주면 물고오고 너무 귀여워요.</td>
+            <td><a href="http://bit.ly/2qENMPc" target="_blank">click!</a></td>
+        </tr>
+        <tr>
+            <td>fish</td>
+            <td><img src="londafish.jpg" width="100%" alt="basketball"></td>
+            <td class="tdText"><time datetime="<2017-04-26T17:35></2017-04-26T17:35>:00">2017년 4월 26일 17시 35분</time><br>인형 내부에 비닐들이 들어있어 누를때마다 비닐소리가 나서 강아지가 호기심을 갖더라구요. 야구공과 같이 던져주면 혼자 잘 놀아요.</td>
+            <td><a href="http://bit.ly/2qo96cb" target="_blank">click!</a></td>
+        </tr>
+    </table>
+    
+    <table id="clothTable" style="display: none">
+        <tr>
+            <th style="width: 15%; text-align: center;">Name</th>
+            <th style="width: 25%; text-align: center;">Image</th>
+            <th style="width: 40%; text-align: center;">MyReview</th>
+            <th style="width: 10%; text-align: center;">Link</th>
+        </tr>
+        <tr>
+            <td>Baseketball</td>
+            <td><img src="cloth1.jpg" width="100%" alt="basketball"></td>
+            <td class="tdText"><time datetime="2017-05-01T19:30:00">2017년 5월 1일 19시 30분</time><br>크리스마스날 론다한테 사준 옷인데 너무 귀여워요.</td>
+            <td><a href="http://bit.ly/2oXwel2" target="_blank">click!</a></td>
+        </tr>
+    </table>
+    
+    <table id="houseTable" style="display: none">
+        <tr>
+            <th style="width: 15%; text-align: center;">Name</th>
+            <th style="width: 25%; text-align: center;">Image</th>
+            <th style="width: 40%; text-align: center;">MyReview</th>
+            <th style="width: 10%; text-align: center;">Link</th>
+        </tr>
+        <tr>
+            <td>Baseketball</td>
+            <td><img src="house1.jpg" width="100%" alt="basketball"></td>
+            <td class="tdText"><time datetime="2017-05-02T15:30:00">2017년 5월 2일 15시 30분</time><br>처음 론다 입양한 날 같이 산 집이에요. 혼났을때, 무서울때, 혼자있고 싶을때 집에 들어가서 혼자 쉬더라구요.</td>
+            <td><a href="http://bit.ly/2oXvlIY" target="_blank">click!</a></td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="js_shopping.js"></script>
+</body>
+</html>

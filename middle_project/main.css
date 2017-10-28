@@ -1,0 +1,117 @@
+ul {
+    left: 0; /* 왼쪽에 딱 붙이기 */
+    top: 0; /* navigation bar 맨위로 올리기 */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #E6C17B;
+    position: fixed; /* scroll 내려도 navigation bar 안내려가게 하기 */
+    width: 100%;
+    z-index: 101;
+}
+ul li {   /* CSS selector의 combination - Descendant Selector*/   
+    display: inline;    
+}
+li a { /* CSS selector의 combination - Descendant Selector*/   
+      display: inline-block; /* inline-block을 해줌으로써 아래의 padding이 먹히게 해줌!*/
+                           /* inline도 height를 갖게 해 주는 것이다!! */
+      color: white;
+      text-align: center;
+      padding: 25px 25px;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      
+}
+.mainHover li a:hover { /* CSS selector의 combination - Descendant Selector & hover를 이용해 각 a태그에 올라갈때 효과*/   
+      background-image: url('dog_foot1.jpg');
+      background-repeat: no-repeat;
+      text-shadow: 0 0 5px #8B4F1D;
+      z-index: 100;
+}
+.right-align{   /* signIN, signOUT에 대해서만 우측 끝에 위치하게 하기 위한 class 선언 */
+      float: right;
+}
+.div-main{
+    margin-top: 72px; /* 네비게이션 바보다 밑에 위치하게 하기 위해 margin을 주었다 */
+    height: 690px;
+    background-color: white;
+}
+/* 이 위에 코드는 모든 html 파일이 공유! */
+
+.mainP{ /* CSS selector의 combination - Descendant Selector*/   
+    text-transform: capitalize; /* 첫 글자 대분자로.... 알아서 transform 되게 선언 */
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 27px;
+    font-weight: bold;
+    background-size: 100%;
+}
+
+.mainP::first-letter{ /*론다 설명 첫 글자 모두 갈색으로 수도엘리먼트 사용*/
+    color: #8B6331;
+}
+
+.centerImage{
+    width: 150px;
+    height: 150px;
+    display: block; /* 이미지 중앙정렬을 위해 이미지를 block으로 */
+    margin-left: auto; /* 이미지 중앙정렬을 위해 margin 사용 */
+    margin-right: auto; 
+    position: relative;
+}
+.centerImage2{
+    width: 300px;
+    height: auto;
+    display: block; /* 이미지 중앙정렬을 위해 이미지를 block으로 */
+    margin-left: auto; /* 이미지 중앙정렬을 위해 margin 사용 */
+    margin-right: auto;
+    position: relative; 
+}
+ 
+.leftImage{
+    width: 30%;
+    height: 100%;
+    overflow: visible;
+    float: left;
+}
+
+.rightImage{
+    width: 30%;
+    height: 100%;
+    overflow: visible;
+    float: right;
+}
+
+.mainText{
+    position: relative;
+}
+
+.madeByParagraph{   /*맨 밑에 있는 madeBy bar */
+    margin: 0;
+    width: 100%;
+    height: 3em;
+    color: white;
+    text-align: center;
+    line-height: 45px; /* 수직 정렬: 가운데 오게*/
+    background-color: #FFD5B4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+details{
+    left: 150px;
+}
+
+/* 사이드에 여백들 없애기! */
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#texts {
+    padding: 50px 0 0 160px;
+    text-align: center;
+    font-weight: bold;
+    color: brown;
+}

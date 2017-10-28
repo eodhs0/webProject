@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Londa's Main</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <meta charset="UTF-8"> <!-- 문자 인코딩 방식 브라우저에 전달 -->
+  <meta name="description" content="Giving dog information">
+  <meta name="keywords" content="Dog, growing dog, poodle">
+  <meta name="author" content="Daehyun Park">
+</head>
+<body>
+
+  <nav class="mainHover">
+    <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="londaLife.html">Londa's Life</a></li>
+     <li><a href="shopping.html">Item Review</a></li>
+     <li><a href="Information.html">Information</a></li>
+     <li class="right-align"><a href="login.html">SignIn / SignUp</a></li> <!-- right-align을 이용해 about 오른쪽으로 때버림 -->
+    </ul>
+  </nav>  
+  <div class="div-main">
+    <img style="display: block;" id="londa1" class="leftImage" src="londa1.jpg" alt="londa">
+    <img style="display: none;" id="londa4" class="leftImage" src="londa4.jpg" alt="londa">
+   
+    <img style="display: block" id="londa2" class="rightImage" src="londa2.jpg" alt="londa">
+    <img style="display: none;" id="londa3" class="rightImage" src="londa3.jpg" alt="londa">
+    <br><br>
+
+    <div id="welcome1" ><img style="z-index: 50;" class="centerImage2" src="welcome.jpg" alt="welcome">
+    <img class="centerImage" src="londaFace.jpg" alt="londa"></div>
+    <div class="mainText"><span id="texts"></span></div>  
+    <p class="mainP"> name : Londa</p>
+    <p class="mainP"> dog breeds : poodle</p>
+    <p class="mainP"> birth : 2015/10/26</p>
+    <p class="mainP"> gender : female</p>
+    <p class="mainP"> hobby : jumping</p>
+    
+    <details>
+     <summary>Londa's secret</summary>
+        She can jump to the chest of person.
+    </details>
+
+  </div>
+  <p class="madeByParagraph"> designed by Dae-Hyun Park, 010-3035-3812 </p>
+  <script type="text/javascript" src="js_index.js"></script>
+</body>
+</html>

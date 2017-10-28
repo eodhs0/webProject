@@ -1,2 +1,1 @@
-# webProject
-This repository is for web project.
+# kmu-cs-web-client-2017-01-project-1
